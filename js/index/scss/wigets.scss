@@ -1,0 +1,10 @@
+.w-container{
+   padding:1em;
+   $blue:#108ee9;
+   background:$blue;
+   .avatar-img{
+    width:200px;
+    height:200px;
+    border-radius:100%;
+   }
+}

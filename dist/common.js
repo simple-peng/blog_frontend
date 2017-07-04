@@ -150,7 +150,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1310);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1309);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -11688,7 +11688,7 @@ module.exports = function spread(callback) {
 
 /***/ }),
 
-/***/ 1309:
+/***/ 1308:
 /***/ (function(module, exports) {
 
 /*!
@@ -11716,7 +11716,7 @@ function isSlowBuffer (obj) {
 
 /***/ }),
 
-/***/ 1310:
+/***/ 1309:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1282);
@@ -11740,7 +11740,7 @@ module.exports = __webpack_require__(1283);
 
 
 var bind = __webpack_require__(1270);
-var isBuffer = __webpack_require__(1309);
+var isBuffer = __webpack_require__(1308);
 
 /*global toString:true*/
 

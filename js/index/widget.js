@@ -1,4 +1,3 @@
-require('./less/wigets.less');
 import React, {Component} from 'react';
 import render from 'react-dom';
 import {Row,Col} from 'antd';
@@ -9,18 +8,19 @@ class Widget extends Component{
     githubData:{}
   }
   componentDidMount(){
-    getGithubData().then(val=>{
-      this.setState({githubData:val.data});
+    getGithubData().then(githubData=>{
+      this.setState({githubData});
     })
   }
   renderGithubData(){
     let {githubData} =this.state;
     if(githubData){
-      let {avatar_url,public_repos,followers} = githubData;
+      let {avatar_url,public_repos,following} = githubData;
+
       return (
              [<Row>
               <Row type='flex' justify='center' align='center'>
-                <img src={avatar_url} className='avatar-img' />
+                <img src={'../../img/author.jpg'} className='avatar-img' />
               </Row>
               <Row type='flex' justify='center' align='center'><h2>pingtingpeng</h2></Row>
             </Row>,
@@ -30,7 +30,7 @@ class Widget extends Component{
                     <Row><h3>项目数</h3></Row>
                 </Col>
                 <Col span={12}>
-                     <Row><h3>{followers}</h3></Row>
+                     <Row><h3>{following}</h3></Row>
                      <Row><h3>关注数</h3></Row>
                 </Col>
              </Row>]

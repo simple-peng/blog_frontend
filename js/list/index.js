@@ -16,7 +16,6 @@ class ListPanel extends Component{
     }
     componentDidMount(){
         blogListApi().then(blogList=>{
-            debugger
             this.setState({blogList})
         })
     }

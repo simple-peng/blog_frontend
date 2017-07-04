@@ -1,0 +1,20 @@
+@import './wigets.scss';
+.blog-list,.widgets{
+  float:left;
+  background:#fff;
+}
+.blog-list{
+  width:50%;
+  padding:1.5em 4%;
+}
+.widgets{
+  margin:0 0 0 5%;
+}
+p{
+  text-align:justify
+}
+.description{
+  margin-bottom:30px;
+}
+
+
